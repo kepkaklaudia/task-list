@@ -1,0 +1,29 @@
+.task__button {
+    color: white;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    border:none;
+    margin:0;
+}
+
+.task__button--done {
+    background-color: green;
+}
+
+.taskContent{
+    margin:10px;
+}
+
+.taskContent--done{
+    text-decoration: line-through;
+}
+
+.taskList{
+    display:grid;
+    grid-template-columns: auto 1fr auto;
+    margin:10px;
+    border-bottom:solid 1px #f0f0f0;
+
+}
