@@ -1,15 +1,21 @@
-.body{
-    margin:15px auto;
-    line-height:1.15;
+.body {
+    margin: 15px auto;
+    line-height: 1.15;
     font-family: 'Montserrat', sans-serif;
     word-break: break-word;
-    display:grid;
-    grid-gap:10px;
-    max-width:1000px;
-    padding:30px;
+    display: grid;
+    grid-gap: 10px;
+    max-width: 1000px;
+    padding: 30px;
     background-color: #f0f0f0;
 }
 
-.body__heading{
-    margin:15px 0;
+@media screen and (max-width: 550px) {
+    .body {
+        padding: 15px;
+    }
+}
+
+.body__heading {
+    margin: 15px 0;
 }

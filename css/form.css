@@ -1,28 +1,42 @@
-.form{
-    display:grid;
+.form {
+    display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
-    padding:5px;
+    padding: 5px;
 }
 
-.form__input{
+@media screen and (max-width: 550px) {
+    .form {
+        grid-template-columns: auto;
+        grid-gap: 15px;
+    }
+}
+
+.form__input {
     border: solid 2px #f0f0f0;
-    padding:10px;
+    padding: 10px;
 }
 
-input:focus{
-border: solid 2px #fff;
-outline: solid 1px #000;
-}    
-
-.form__button{
-color:white;
-background-color:teal;
-border:none;
-padding:10px;
-font-weight:300;
+input:focus {
+    border: solid 2px #fff;
+    outline: solid 1px #000;
 }
 
-.form__button:focus{
+@media screen and (max-width: 550px) {
+    input:focus {
+        border: solid 2px #fff;
+        outline: solid 1px rgb(255, 115, 33);
+    }
+}
+
+.form__button {
+    color: white;
+    background-color: teal;
+    border: none;
+    padding: 10px;
+    font-weight: 300;
+}
+
+.form__button:focus {
     outline: solid 1px #000;
 }
