@@ -1,0 +1,11 @@
+.section{
+    background-color:white;
+    min-height:120px;
+}
+
+.section__heading{
+    font-weight:700;
+    font-size:20px;
+    margin: 20px;
+}
+

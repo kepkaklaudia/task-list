@@ -1,0 +1,9 @@
+.container{
+    border-top:solid 2px #f0f0f0;
+    padding:15px;
+}
+
+.container__list{
+    padding:0px;
+    list-style-type: none;
+}
