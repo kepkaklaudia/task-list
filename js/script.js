@@ -45,7 +45,7 @@
 			</button>
         <span class="taskContent ${task.done ? " taskContent--done" : ""}">${task.content} </span>
        		<button class="task__button task__button--remove js-remove">
-				&#128465
+			   <i class="fa">&#xf014;</i>
 			</button> 
 		</li>
 		`;
