@@ -4,8 +4,8 @@
     width: 30px;
     height: 30px;
     padding: 2px;
-    border:none;
-    margin:0;
+    border: none;
+    margin: 0;
 }
 
 .task__button:focus {
@@ -16,18 +16,18 @@
     background-color: green;
 }
 
-.taskContent{
-    margin:10px;
+.taskContent {
+    margin: 10px;
 }
 
-.taskContent--done{
+.taskContent--done {
     text-decoration: line-through;
 }
 
-.tasksList{
-    display:grid;
+.tasksList {
+    display: grid;
     grid-template-columns: auto 1fr auto;
-    margin:10px;
-    border-bottom:solid 1px #f0f0f0;
+    margin: 10px;
+    border-bottom: solid 1px #f0f0f0;
     align-items: center;
 }
