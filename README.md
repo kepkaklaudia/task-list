@@ -1,12 +1,12 @@
 # <img src="images/icon.png" height="40"/> Task List Website 
 <img src="images/show.gif" height="250"/>
 
-<img src="images/myIcons/kk.png" height="70"/> Made by Klaudia Kępka
+<img src="images/myIcons/kk.png" height="40"/> Made by Klaudia Kępka
 
-## <img src="images/myIcons/demo.png" height="80"/> Task List Demo Website:
+## <img src="images/myIcons/demo.png" height="60"/> Task List Demo Website:
 [Task List Demo Website](https://kepkaklaudia.github.io/taskList/)
 
-## <img src="images/myIcons/quick.png" height="80"/> Quick Preview
+## <img src="images/myIcons/quick.png" height="60"/> Quick Preview
 ![gifPreview](images/preview.gif)
 
 ## Add new task field
