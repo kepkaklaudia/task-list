@@ -1,11 +1,13 @@
 # <img src="images/icon.png" height="40"/> Task List Website 
 <img src="images/show.gif" height="250"/>
-Made by Klaudia Kępka
+<img src="images/myIcons/kk.png" height="25"/>Made by Klaudia Kępka
 
-## Task List Demo Website:
+<img src="images/myicons/html.png"height="30"/>
+
+## <img src="images/myIcons/demo.png" height="30"/> Task List Demo Website:
 [Task List Demo Website](https://kepkaklaudia.github.io/taskList/)
 
-## Quick Preview
+## <img src="images/myIcons/quick.png" height="30"/> Quick Preview
 ![gifPreview](images/preview.gif)
 
 ## Add new task field
@@ -34,8 +36,12 @@ The input field outline illumination changes from black to orange. In addition, 
 
 
 ## Technologies used
-- HTML
-- CSS
-- JavaScript, ES6+ Features
-- BEM Convention
-- normalize.css
+<img src="images/myIcons/html.png" height="30"/>HTML
+
+<img src="images/myIcons/css.png" height="30"/>CSS
+
+<img src="images/myIcons/js.png" height="30"/>JavaScript, <img src="images/myIcons/es6.png" height="30"/>ES6+ Features
+
+<img src="images/myIcons/bem.png" height="30"/>BEM Convention
+
+<img src="images/myIcons/norm.png" height="30"/>normalize.css
