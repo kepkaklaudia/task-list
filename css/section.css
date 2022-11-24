@@ -1,12 +1,12 @@
-.section{
-    background-color:white;
-    min-height:120px;
+.section {
+  background-color: white;
+  min-height: 120px;
+  box-shadow: 0 0 5px #f0f0f0;
 }
 
-.section__heading{
-    font-weight:700;
-    font-size:20px;
-    margin: 20px;
-    border-bottom:solid 2px #f0f0f0;
+.section__heading {
+  font-size: 20px;
+  padding: 20px;
+  margin: 0;
+  border-bottom: solid 1px #f0f0f0;
 }
-
