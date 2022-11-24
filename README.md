@@ -1,13 +1,12 @@
 # <img src="images/icon.png" height="40"/> Task List Website 
 <img src="images/show.gif" height="250"/>
-<img src="images/myIcons/kk.png" height="25"/>Made by Klaudia Kępka
 
-<img src="images/myicons/html.png"height="30"/>
+<img src="images/myIcons/kk.png" height="70"/> Made by Klaudia Kępka
 
-## <img src="images/myIcons/demo.png" height="30"/> Task List Demo Website:
+## <img src="images/myIcons/demo.png" height="80"/> Task List Demo Website:
 [Task List Demo Website](https://kepkaklaudia.github.io/taskList/)
 
-## <img src="images/myIcons/quick.png" height="30"/> Quick Preview
+## <img src="images/myIcons/quick.png" height="80"/> Quick Preview
 ![gifPreview](images/preview.gif)
 
 ## Add new task field
@@ -36,12 +35,12 @@ The input field outline illumination changes from black to orange. In addition, 
 
 
 ## Technologies used
-<img src="images/myIcons/html.png" height="30"/>HTML
+<img src="images/myIcons/html.png" height="90"/>
 
-<img src="images/myIcons/css.png" height="30"/>CSS
+<img src="images/myIcons/css.png" height="90"/>
 
-<img src="images/myIcons/js.png" height="30"/>JavaScript, <img src="images/myIcons/es6.png" height="30"/>ES6+ Features
+<img src="images/myIcons/js.png" height="90"/> <img src="images/myIcons/es6.png" height="90"/>
 
-<img src="images/myIcons/bem.png" height="30"/>BEM Convention
+<img src="images/myIcons/bem.png" height="90"/>
 
-<img src="images/myIcons/norm.png" height="30"/>normalize.css
+<img src="images/myIcons/norm.png" height="90"/>
