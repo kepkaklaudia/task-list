@@ -29,4 +29,5 @@
     grid-template-columns: auto 1fr auto;
     margin:10px;
     border-bottom:solid 1px #f0f0f0;
+    align-items: center;
 }
