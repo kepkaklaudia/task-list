@@ -1,33 +1,45 @@
 .task__button {
-    color: white;
-    background-color: crimson;
-    width: 30px;
-    height: 30px;
-    padding: 2px;
-    border: none;
-    margin: 0;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(348, 83%, 47%);
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  border: none;
+  margin: 0;
 }
 
-.task__button:focus {
-    outline: solid 1px #000;
+.task__button--toggleDone {
+  background-color: hsl(120, 61%, 34%);
 }
 
-.task__button--done {
-    background-color: green;
+.task__button--toggleDone:hover {
+  background-color: hsl(120, 61%, 39%);
+}
+
+.task__button--toggleDone:active {
+  background-color: hsl(120, 61%, 44%);
+}
+
+.task__button--remove:hover {
+  background-color: hsl(348, 83%, 52%);
+}
+
+.task__button--remove:active {
+  background-color: hsl(348, 83%, 57%);
 }
 
 .taskContent {
-    margin: 10px;
+  margin: 10px;
 }
 
 .taskContent--done {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .tasksList {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    margin: 10px;
-    border-bottom: solid 1px #f0f0f0;
-    align-items: center;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  margin: 10px;
+  border-bottom: solid 1px hsl(0, 0%, 94%);
+  align-items: center;
 }
