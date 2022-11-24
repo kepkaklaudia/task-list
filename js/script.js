@@ -11,22 +11,26 @@
 	const removeTask = (taskIndex) => {
 		tasks.splice(taskIndex, 1);
 		render();
-	}
+	};
 
 	const toggleTaskDone = (taskIndex) => {
 		tasks[taskIndex].done = !tasks[taskIndex].done;
 		render();
-	}
+	};
 
-	const bindEvents = () => {
+	const bindRemoveEvents = () => {
 		const removeButtons = document.querySelectorAll(".js-remove");
+		
 		removeButtons.forEach((removeButton, index) => {
 			removeButton.addEventListener("click", () => {
 				removeTask(index);
 			});
 		});
+	};
 
-		const toggleDoneButtons = document.querySelectorAll(".js-done");
+	const bindToggleDoneEvents = () => {
+		const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
+
 		toggleDoneButtons.forEach((toggleDoneButton, index) => {
 			toggleDoneButton.addEventListener("click", () => {
 				toggleTaskDone(index);
@@ -39,26 +43,30 @@
 
 		for (const task of tasks) {
 			htmlString += `
-		<li class="tasksList">	 
-        	<button class="task__button task__button--done js-done">
-				${task.done ? "&#10004" : ""}
-			</button>
-        <span class="taskContent ${task.done ? " taskContent--done" : ""}">${task.content} </span>
-       		<button class="task__button task__button--remove js-remove">
-			   <i class="fa">&#xf014;</i>
-			</button> 
-		</li>
-		`;
+				<li class="tasksList">	 
+        		<button class="task__button task__button--toggleDone js-toggleDone">
+							${task.done ? "&#10004" : ""}
+						</button>
+       			<span class="taskContent ${task.done ? " taskContent--done" : ""}">
+							${task.content} 
+						</span>
+       			<button class="task__button task__button--remove js-remove">
+			   			<i class="fa">&#xf014;</i>
+						</button> 
+				</li>
+				`;
 		}
+
 		document.querySelector(".js-tasks").innerHTML = htmlString;
 
-		bindEvents();
-
+		bindRemoveEvents();
+		bindToggleDoneEvents();
 	};
 
 	const onFormSubmit = (event) => {
 		event.preventDefault();
-		const newTask = document.querySelector(".js-newTask")
+
+		const newTask = document.querySelector(".js-newTask");
 		const newTaskContent = newTask.value.trim();
 
 		if (newTaskContent === "") {
@@ -84,8 +92,8 @@
 		form.addEventListener("submit", onFormSubmit);
 		form.addEventListener("submit", clearInput);
 		form.addEventListener("submit", focusOn);
-
 	};
+	
 	init();
 }
 
