@@ -35,10 +35,18 @@ input:focus {
   border: none;
   padding: 10px;
   font-weight: 300;
+  transition:0.5s;
 }
 
 .form__button:hover {
   background-color: hsl(180, 100%, 30%);
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 550px) {
+  .form__button:hover {
+    transform: scale(1.05);
+  }
 }
 
 .form__button:active {
