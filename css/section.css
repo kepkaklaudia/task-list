@@ -8,5 +8,19 @@
   font-size: 20px;
   padding: 20px;
   margin: 0;
+}
+
+.section__header {
+  display:grid;
+  grid-template-columns: 1fr auto;
+  align-items:center;
   border-bottom: solid 1px #f0f0f0;
 }
+
+.renderButton {
+    border:none;
+    background-color: transparent;
+    margin-right:15px;
+    color: teal;
+    transition: 0.5s;
+};
