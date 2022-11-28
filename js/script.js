@@ -1,7 +1,7 @@
 {
 	let tasks = [];
 	let hideDoneTasks = false;
-	
+
 	const addNewTask = (newTaskContent) => {
 		tasks = [
 			...tasks,
@@ -83,6 +83,22 @@
 		document.querySelector(".js-buttons").innerHTML = htmlString;
 	};
 
+  const setAllTasksDone = () => {
+    const toggleAllDone = document.querySelector(".js-setAllDoneButton")
+    toggleAllDone.addEventListener("click", () => {
+      markAllTasksDone();
+    });
+  };
+
+  const markAllTasksDone = () => {
+    tasks = tasks.map((task) =>
+    ({
+      ...task,
+      done: true
+    }));
+    render();
+  };
+
 	const onFormSubmit = (event) => {
 		event.preventDefault();
 
@@ -107,6 +123,7 @@
 	const render = () => {
 		renderTask();
 		renderButtons();
+		setAllTasksDone();
 	};
 
 	const init = () => {
