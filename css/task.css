@@ -6,7 +6,7 @@
   padding: 2px;
   border: none;
   margin: 0;
-  transition:0.5s;
+  transition: 0.5s;
 }
 
 .task__button--toggleDone {
@@ -47,4 +47,4 @@
 
 .tasksList--hidden {
   display: none;
-};
+}
