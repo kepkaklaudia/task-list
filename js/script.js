@@ -1,10 +1,11 @@
 {
-	const tasks = [];
+	let tasks = [];
 
 	const addNewTask = (newTaskContent) => {
-		tasks.push({
-			content: newTaskContent,
-		});
+		tasks = [
+			...tasks,
+			{ content: newTaskContent },
+		];
 		render();
 	};
 
@@ -20,7 +21,7 @@
 
 	const bindRemoveEvents = () => {
 		const removeButtons = document.querySelectorAll(".js-remove");
-		
+
 		removeButtons.forEach((removeButton, index) => {
 			removeButton.addEventListener("click", () => {
 				removeTask(index);
@@ -93,7 +94,7 @@
 		form.addEventListener("submit", clearInput);
 		form.addEventListener("submit", focusOn);
 	};
-	
+
 	init();
 }
 
