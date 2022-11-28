@@ -1,7 +1,7 @@
 .section {
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
   min-height: 120px;
-  box-shadow: 0 0 5px #f0f0f0;
+  box-shadow: 0 0 5px hsl(0, 0%, 94%);
 }
 
 .section__heading {
@@ -11,16 +11,43 @@
 }
 
 .section__header {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr auto;
-  align-items:center;
-  border-bottom: solid 1px #f0f0f0;
+  align-items: center;
+  border-bottom: solid 1px hsl(0, 0%, 94%);
+}
+
+.section__buttons {
+  padding: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .section__header {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .section__buttons {
+    display: grid;
+    grid-gap: 15px;
+    }
 }
 
 .renderButton {
-    border:none;
+    border: none;
     background-color: transparent;
-    margin-right:15px;
-    color: teal;
+    color: hsl(180, 100%, 25%);
     transition: 0.5s;
-};
+}
+
+.renderButton:hover {
+  color: hsl(180, 100%, 30%);
+}
+
+.renderButton:active {
+  color: hsl(180, 100%, 35%);
+}
+
+.renderButton:disabled {
+  color: hsla(0, 0%, 49%, 0.389);
+}
