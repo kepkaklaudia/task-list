@@ -42,6 +42,7 @@
 
 .renderButton:hover {
   color: hsl(180, 100%, 30%);
+  cursor: pointer;
 }
 
 .renderButton:active {
