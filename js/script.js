@@ -7,6 +7,7 @@
 			...tasks,
 			{ content: newTaskContent },
 		];
+
 		render();
 	};
 
@@ -15,6 +16,7 @@
 			...tasks.slice(0, taskIndex),
 			...tasks.slice(taskIndex + 1),
 		];
+
 		render();
 	};
 
@@ -24,6 +26,7 @@
 			{ ...tasks[taskIndex], done: tasks[taskIndex].done = !tasks[taskIndex].done },
 			...tasks.slice(taskIndex + 1),
 		];
+
 		render();
 	};
 
@@ -63,7 +66,7 @@
 			   			<i class="fa">&#xf014;</i>
 						</button> 
 				</li>
-				`;
+			`;
 		}
 
 		document.querySelector(".js-tasks").innerHTML = htmlString;
@@ -76,10 +79,15 @@
 		let htmlString = "";
 		if (tasks !== 0) {
 			htmlString += `
-	<button class=" renderButton js-hideAllDoneButton">${hideDoneTasks ? "Pokaż " : "Ukryj "}ukończone</button>
-	<button class=" renderButton js-setAllDoneButton" ${tasks.every(({ done }) => done) ? "disabled" : ""}>Ukończ wszystkie</button>
-	`;
+				<button class=" renderButton js-hideAllDoneButton">
+					${hideDoneTasks ? "Pokaż " : "Ukryj "}ukończone
+				</button>
+				<button class=" renderButton js-setAllDoneButton" ${tasks.every(({ done }) => done) ? "disabled" : ""}>
+					Ukończ wszystkie
+				</button>
+				`;
 		}
+
 		document.querySelector(".js-buttons").innerHTML = htmlString;
 	};
 
@@ -91,11 +99,11 @@
   };
 
   const markAllTasksDone = () => {
-    tasks = tasks.map((task) =>
-    ({
+    tasks = tasks.map((task) =>({
       ...task,
       done: true
     }));
+
     render();
   };
 
@@ -108,6 +116,7 @@
 	};
 	const toggleHideAllTasksDone = () =>{
 		hideDoneTasks = !hideDoneTasks;
+
 		render();
 	};
 
@@ -120,6 +129,7 @@
 		if (newTaskContent === "") {
 			return;
 		}
+		
 		addNewTask(newTaskContent);
 		clearInput(newTask);
 	};
