@@ -127,7 +127,7 @@
 		const newTaskContent = newTask.value.trim();
 
 		if (newTaskContent === "") {
-			return;
+      return;
 		}
 
 		addNewTask(newTaskContent);
@@ -143,8 +143,8 @@
 	};
 
 	const render = () => {
-		renderTask();
-		renderButtons();
+    renderTask();
+    renderButtons();
 		setAllTasksDone();
 		hideAllTasksDone();
 	};
