@@ -129,7 +129,7 @@
 		if (newTaskContent === "") {
 			return;
 		}
-		
+
 		addNewTask(newTaskContent);
 		clearInput(newTask);
 	};
