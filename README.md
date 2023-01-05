@@ -24,6 +24,12 @@ On the left side of the task you will see a green square - it is a marker that a
 
 On the right of the task, you'll see a red square with a trash can icon 🗑. After clicking it, the corresponding task will be deleted.
 
+After adding a task, two buttons "Ukryj ukończone" and "Ukończ wszystkie" will appear on the right side of the section. 
+
+When you have any completed tasks in your list, you can hide them with the first button. The button will change its name to "Pokaż ukończone" - when you click it again, all your completed tasks will be shown again. 
+
+You can use the second button to complete all your quests. When all tasks are completed, this button is inactive.
+
 ## Responsive version
 When you are in mobile/tablet mode (maximum width of screen: 550px) you can notice some changes.
 
