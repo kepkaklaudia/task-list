@@ -57,13 +57,13 @@
       htmlString += `
         <li class="tasksList ${task.done && hideDoneTasks ? "tasksList--hidden" : ""} ">	 
           <button class="task__button task__button--toggleDone js-toggleDone">
-              ${task.done ? "&#10004" : ""}
+              ${task.done ? "✓" : ""}
           </button>
           <span class="taskContent ${task.done ? " taskContent--done" : ""}">
             ${task.content} 
           </span>
           <button class="task__button task__button--remove js-remove">
-            <i class="fa">&#xf014;</i>
+            <i class="fa">🗑</i>
           </button> 
         </li>
       `;
